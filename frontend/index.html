@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PDF Newspaper Analyzer</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="upload-panel" aria-labelledby="title">
+        <div>
+          <p class="eyebrow">Digital and scanned PDFs</p>
+          <h1 id="title">PDF Newspaper Analyzer</h1>
+        </div>
+
+        <form id="upload-form">
+          <label id="drop-zone" class="drop-zone" for="pdf-input">
+            <span class="drop-icon">PDF</span>
+            <span class="drop-title">Drop a PDF here</span>
+            <span id="file-name" class="drop-subtitle">or choose a file to analyze</span>
+            <input id="pdf-input" type="file" accept="application/pdf,.pdf" />
+          </label>
+
+          <div class="actions">
+            <button id="upload-button" type="submit">Analyze PDF</button>
+            <button id="reset-button" type="button" class="secondary">Reset</button>
+          </div>
+
+          <div class="progress-wrap" aria-live="polite">
+            <div id="progress-bar" class="progress-bar"></div>
+          </div>
+          <p id="status" class="status">Ready</p>
+        </form>
+      </section>
+
+      <section class="results-grid" aria-label="Analysis results">
+        <article class="result-card">
+          <span>Pages</span>
+          <strong id="pages">-</strong>
+        </article>
+        <article class="result-card">
+          <span>Headline Count</span>
+          <strong id="headlines">-</strong>
+        </article>
+        <article class="result-card">
+          <span>Photo Count</span>
+          <strong id="photos">-</strong>
+        </article>
+        <article class="result-card">
+          <span>Processing Time</span>
+          <strong id="processing-time">-</strong>
+        </article>
+      </section>
+
+      <section id="details" class="details" hidden>
+        <div>
+          <span>Headline confidence</span>
+          <strong id="headline-confidence">-</strong>
+        </div>
+        <div>
+          <span>Photo confidence</span>
+          <strong id="photo-confidence">-</strong>
+        </div>
+      </section>
+    </main>
+
+    <script src="/static/script.js"></script>
+  </body>
+</html>
