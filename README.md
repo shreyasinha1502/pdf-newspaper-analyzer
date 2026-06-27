@@ -30,6 +30,10 @@ FastAPI application that analyzes uploaded PDFs and returns page count, total he
 
 https://huggingface.co/spaces/shreyaaa1502/pdf-newspaper-analyzer
 
+## Application Preview
+
+![Project Snapshot1](https://github.com/shreyasinha1502/pdf-newspaper-analyzer/blob/main/p1.PNG)
+
 ## Run Locally
 
 ```bash
