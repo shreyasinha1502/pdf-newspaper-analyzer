@@ -26,6 +26,10 @@ FastAPI application that analyzes uploaded PDFs and returns page count, total he
 - Tesseract installed locally if you want the fallback OCR engine.
 - Docker is recommended for deployment because it installs system OCR dependencies.
 
+## Application link 
+
+https://huggingface.co/spaces/shreyaaa1502/pdf-newspaper-analyzer
+
 ## Run Locally
 
 ```bash
